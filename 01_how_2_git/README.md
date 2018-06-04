@@ -11,8 +11,6 @@
     - `git checkout <branch_name>`
   2. Method 2
     - `git checkout -b <new_branch_name>`
-
-
     Instead of `checkout` you can also say `co`
 
 7. `git push -u origin <branch_name>`
