@@ -123,4 +123,34 @@ def num_points_scored(player_name)
   # get a list of all the players
   # find the player whose name matches the argument 'player_name'
   # return that player's points
+
+  find_player(player_name)[:points]
 end
+
+def num_rebounds(player_name)
+  find_player(player_name)[:rebounds]
+end
+
+def num_dunks(player_name)
+  find_player(player_name)[:slam_dunks]
+end
+
+def find_player(player_name)
+  matched_player = get_players.find { |player| player[:player_name] == player_name }
+end
+
+def get_players
+  # players = game_hash[:home][:players] + game_hash[:away][:players]
+  game_hash.map { |team, team_data| team_data[:players] }.flatten
+  # [[p1, p2, p3], [p4, p5, p6]]
+  # [p1, p2, p3, p4, p5, p6]
+end
+
+# an array of all players who have scored more than 10 points
+def good_players
+  players = get_players
+  players.select { |player| player[:points_scored] > 10 }
+end
+
+binding.pry
+1
