@@ -1,0 +1,6 @@
+<h1><%= @listing.neighborhood %></h1>
+
+<p>This is an amazing listing. It has <%= @listing.num_rooms %> rooms and costs £<%= @listing.price %>.</p>
+
+<a href="/listings">View All Listings</a>
+<a href="/listings/<%= @listing.id %>/edit">Edit this Listing</a>

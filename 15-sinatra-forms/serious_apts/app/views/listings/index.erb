@@ -1,0 +1,9 @@
+<h1>All da Listings</h1>
+
+<a href="/listings/new">Create new Listing</a>
+
+<ul>
+  <% @listings.each do |listing| %>
+    <li><a href="/listings/<%= listing.id %>"><%= listing.neighborhood %></a> | <%= listing.num_rooms %> rooms | £<%= listing.price %></li>
+  <% end %>
+</ul>

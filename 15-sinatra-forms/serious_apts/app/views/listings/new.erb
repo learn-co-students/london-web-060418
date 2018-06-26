@@ -1,0 +1,19 @@
+<h1>Create new Listing</h1>
+
+<a href="/listings">Go back</a>
+
+<form action="/listings" method="post">
+  <div>
+    <label for="">Neigborhood:</label>
+    <input type="text" name="listing[neighborhood]" />
+  </div>
+  <div>
+    <label for="">Number of Rooms:</label>
+    <input type="text" name="listing[num_rooms]" />
+  </div>
+  <div>
+    <label for="">Price:</label>
+    <input type="text" name="listing[price]" />
+  </div>
+  <input type="submit" value="Create new Listing" />
+</form>
