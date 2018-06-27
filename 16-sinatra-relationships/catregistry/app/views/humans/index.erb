@@ -1,0 +1,9 @@
+<h1>Humans Here!</h1>
+
+<a href="/humans/new">Make a new Human</a>
+
+<ul>
+  <% @humans.each do |human| %>
+    <li>Human <a href="/humans/<%= human.id %>"><%= human.name %></a></li>
+  <% end %>
+</ul>

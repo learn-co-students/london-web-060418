@@ -1,0 +1,25 @@
+<h1><%= @cat.name %></h1>
+
+<p>This cat's breed is <%= @cat.breed %></p>
+
+<% if @cat.toys.length > 0 %>
+  <p>Here are my toys!!!</p>
+  <ul>
+    <% @cat.toys.each do |toy| %>
+      <li><a href="/toys/<%= toy.id %>"><%= toy.name %></a></li>
+    <% end %>
+  </ul>
+<% end %>
+
+<% if @cat.humans.length > 0 %>
+  <p>I sometimes live with:</p>
+  <ul>
+    <% @cat.humans.each do |human| %>
+      <li><a href="/humans/<%= human.id %>"><%= human.name %></a></li>
+    <% end %>
+  </ul>
+<% end %>
+
+
+<a href="/cats">See all cats</a>
+<a href="/cats/<%= @cat.id %>/edit">Edit this cat</a>

@@ -1,0 +1,7 @@
+<h1><%= @toy.name %></h1>
+
+<p>This is a fun toy, according to <a href="/cats/<%= @toy.cat.id %>"><%= @toy.cat.name %></a>.</p>
+
+
+<a href="/toys">See all toys</a>
+<a href="/toys/<%= @toy.id %>/edit">Edit this toy</a>

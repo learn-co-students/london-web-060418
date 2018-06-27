@@ -1,0 +1,22 @@
+<h1>Edit this toy</h1>
+
+<form action="/toys/<%= @toy.id %>" method="post">
+  <input type="hidden" name="_method" value="patch" />
+  <label for="">Name:</label>
+  <input type="text" name="toy[name]" value="<%= @toy.name %>" />
+
+  <select id="cat_select" name="toy[cat_id]">
+    <% @cats.each do |cat| %>
+      <option value="<%= cat.id %>"
+        <% if @toy.cat_id == cat.id %>selected<% end %>
+      ><%= cat.name %></option>
+    <% end %>
+  </select>
+
+  <input type="submit" />
+</form>
+
+<form action="/toys/<%= @toy.id %>" method="post">
+  <input type="hidden" name="_method" value="delete" />
+  <input type="submit" value="Delete Toy" />
+</form>

@@ -1,0 +1,15 @@
+<h1><%= @human.name %></h1>
+
+<p>This is a glorious human, according to certain cats:</p>
+
+<% if @human.cats.length > 0 %>
+  <ul>
+    <% @human.cats.each do |cat| %>
+      <li><a href="/cats/<%= cat.id %>"><%= cat.name %></a></li>
+    <% end %>
+  </ul>
+<% end %>
+
+
+<a href="/humans">See all humans</a>
+<a href="/humans/<%= @human.id %>/edit">Edit this human</a>

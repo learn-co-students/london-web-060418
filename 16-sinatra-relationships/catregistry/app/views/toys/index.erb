@@ -1,0 +1,9 @@
+<h1>Toys Here!</h1>
+
+<a href="/toys/new">Make a new Toy</a>
+
+<ul>
+  <% @toys.each do |toy| %>
+    <li><a href="/toys/<%= toy.id %>"><%= toy.name %></a></li>
+  <% end %>
+</ul>
