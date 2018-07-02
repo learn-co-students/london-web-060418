@@ -1,0 +1,6 @@
+<h1><%= @cupcake.name %></h1>
+
+<p>This costs £<%= @cupcake.price %></p>
+
+<%= link_to "All Cupcakes", cupcakes_path %>
+<%= link_to "Edit this cupcake", edit_cupcake_path(@cupcake) %>

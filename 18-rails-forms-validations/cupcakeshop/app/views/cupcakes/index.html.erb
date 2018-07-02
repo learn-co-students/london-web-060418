@@ -1,0 +1,9 @@
+<h1>Get yer cupcakes here!</h1>
+
+<%= link_to "Add Cupcake", new_cupcake_path %>
+
+<ul>
+  <% @cupcakes.each do |cupcake| %>
+    <li><%= link_to cupcake.name, cupcake %> | £<%= cupcake.price %></li>
+  <% end %>
+</ul>
