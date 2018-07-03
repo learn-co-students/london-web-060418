@@ -1,0 +1,9 @@
+<h1>All Wines</h1>
+
+<%= link_to "Make new Wine", new_wine_path %>
+
+<ul>
+  <% @wines.each do |wine| %>
+    <li><%= link_to wine.name, wine %></li>
+  <% end %>
+</ul>

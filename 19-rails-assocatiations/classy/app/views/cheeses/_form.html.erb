@@ -1,0 +1,8 @@
+<%= render "errors/errors" %>
+
+<%= form_for @cheese do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+  <%= f.collection_check_boxes :wine_ids, @wines, :id, :name %>
+  <%= f.submit %>
+<% end %>

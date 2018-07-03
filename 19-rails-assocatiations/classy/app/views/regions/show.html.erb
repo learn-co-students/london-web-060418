@@ -1,0 +1,13 @@
+<h1><%= @region.name %></h1>
+
+<% if @region.wines.length > 0 %>
+  <p>The following wines are from this beautiful region.</p>
+  <ul>
+    <% @region.wines.each do |wine| %>
+      <li><%= link_to wine.name, wine %></li>
+    <% end %>
+  </ul>
+<% end %>
+
+<%= link_to "All Regions", regions_path %>
+<%= link_to "Edit Region", edit_region_path(@region) %>

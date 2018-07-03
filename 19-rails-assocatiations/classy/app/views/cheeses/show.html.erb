@@ -1,0 +1,14 @@
+<h1><%= @cheese.name %></h1>
+
+<% if @cheese.wines.length > 0 %>
+  <p>This cheese might pair well with the following</p>
+  <ul>
+    <% @cheese.wines.each do |wine| %>
+      <li><%= link_to wine.name, wine %> from the <%= link_to wine.region.name, wine.region %> region.</li>
+    <% end %>
+  </ul>
+<% end %>
+
+
+<%= link_to "All Cheeses", cheeses_path %>
+<%= link_to "Edit Cheese", edit_cheese_path(@cheese) %>

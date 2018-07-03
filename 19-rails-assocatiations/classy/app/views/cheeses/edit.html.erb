@@ -1,0 +1,9 @@
+<h1>Edit Cheese</h1>
+
+<%= link_to "go back", @cheese %>
+
+<%= render "form" %>
+
+<%= form_tag cheese_path(@cheese), method: "delete" do  %>
+  <%= submit_tag "Delete Cheese" %>
+<% end %>

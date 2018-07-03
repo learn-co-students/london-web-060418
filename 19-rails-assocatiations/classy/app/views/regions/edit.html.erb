@@ -1,0 +1,9 @@
+<h1>Edit Region</h1>
+
+<%= link_to "go back", @region %>
+
+<%= render "form" %>
+
+<%= form_tag region_path(@region), method: "delete" do  %>
+  <%= submit_tag "Delete Region" %>
+<% end %>

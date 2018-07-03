@@ -1,0 +1,9 @@
+<h1>All Cheeses</h1>
+
+<%= link_to "Make new Cheese", new_cheese_path %>
+
+<ul>
+  <% @cheeses.each do |cheese| %>
+    <li><%= link_to cheese.name, cheese %></li>
+  <% end %>
+</ul>

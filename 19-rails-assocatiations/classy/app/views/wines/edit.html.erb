@@ -1,0 +1,9 @@
+<h1>Edit Wine</h1>
+
+<%= link_to "go back", @wine %>
+
+<%= render "form" %>
+
+<%= form_tag wine_path(@wine), method: "delete" do  %>
+  <%= submit_tag "Delete Wine" %>
+<% end %>
