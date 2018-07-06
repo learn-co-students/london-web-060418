@@ -1,0 +1,16 @@
+<h1><%= @user.username %></h1>
+
+<% if @user == current_user %>
+  <h2>Welcome back</h2>
+  <%= link_to "Would you like to modify your library?", edit_user_path(@user) %>
+<% end %>
+
+
+<% if @user.books.length > 0 %>
+  <h3>Ur Library</h3>
+  <ul>
+    <% @user.books.each do |book| %>
+      <li><%= link_to book.title, book %></li>
+    <% end %>
+  </ul>
+<% end %>

@@ -1,0 +1,13 @@
+<h1>Your account settings</h1>
+
+<%= form_for @user do |f| %>
+  <%= f.label :username %>
+  <%= f.text_field :username %>
+  <%= f.collection_check_boxes :book_ids, @books, :id, :title do |cb| %>
+    <div>
+      <%= cb.check_box %>
+      <%= cb.label %>
+    </div>
+  <% end %>
+  <%= f.submit %>
+<% end %>
