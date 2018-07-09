@@ -352,9 +352,16 @@ or
 ## Modern layout tools - Grid and Flexbox
 
 [Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
+
 [Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 
+[CSS Grid by Wes Bos](https://cssgrid.io/)
+
+[CSS Flexbox by Wes Box](https://flexbox.io/)
+
 ## References
+[Two absolutely great mini-courses on HTML&CSS](https://learn.shayhowe.com/)
+
 [CSS beginner guides](https://css-tricks.com/guides/beginner/)
 
 [Little useful bits of CSS snippets](https://css-tricks.com/snippets/css/)
@@ -383,22 +390,6 @@ or
 
 Don't worry about x-browser compatibility in your mod 2 projects, make sure it works and looks fine on Chrome and that will suffice. If you want to explore further CSS features, I would like to encourage you to look into how to build responsive css layouts.
 
-https://docs.google.com/presentation/d/1wTkUPKfSKt7ueUeKsZ6cYQ0RjRzpnEDLCqKKTB041P8/edit#slide=id.p58
+Have fun building the best looking sites!
 
-https://learn.co/tracks/web-development-immersive-2-0-module-two
-
-https://learn.co/curriculum/tracks/25783
-
-https://github.com/learn-co-curriculum/why-building-apis-reading
-
-https://github.com/learn-co-curriculum/css-box-model
-
-https://github.com/learn-co-curriculum/css-layout-types
-
-https://github.com/learn-co-curriculum/css-display
-
-https://github.com/learn-co-curriculum/css-positioning
-
-https://github.com/learn-co-curriculum/responsive-strategies
-
-https://github.com/learn-co-curriculum/media-queries
+//<3
