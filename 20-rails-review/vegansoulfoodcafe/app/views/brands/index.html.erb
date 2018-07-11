@@ -1,0 +1,7 @@
+<h1>All Brands</h1>
+
+<ul>
+  <% @brands.each do |brand| %>
+    <li><%= brand.name %> | <%= brand.hipster_rating %> / 10 hipsters</li>
+  <% end %>
+</ul>

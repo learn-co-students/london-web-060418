@@ -1,0 +1,7 @@
+<h1><%= @item.name %></h1>
+
+<h3>£<%= @item.price %></h3>
+
+<%= form_tag item_path(@item), method: "delete" do %>
+  <%= submit_tag "delete me" %>
+<% end %>
