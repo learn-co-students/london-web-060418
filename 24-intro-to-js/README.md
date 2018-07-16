@@ -1,5 +1,17 @@
 # Procedural JavaScript
 
+## What is weird about JavaScript
+- debugging harder
+  - debugger, you need console open
+  - console.log
+- different error messages, maybe better
+- new syntax
+  - {}, ;
+- explicit return
+- hoisting
+  - variable declaration versus assignment
+- scope
+
 ## JavaScript History
   - Marc Andreessen co-founder of Netscape envisioned a more dynamic web
   - the web needed a scripting language that could interact with the DOM
