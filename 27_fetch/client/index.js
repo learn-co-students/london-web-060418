@@ -12,10 +12,9 @@
 document.addEventListener('DOMContentLoaded', init)
 
 function init() {
-
   Adapter.getBrews()
     .then((resp) => {return renderBrews(resp)})
-  }
+}
 
 
 function renderBrews(data) {
