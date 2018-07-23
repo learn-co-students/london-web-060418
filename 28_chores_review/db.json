@@ -1,0 +1,40 @@
+{
+  "chores": [
+    {
+      "id": 1,
+      "title": "Wash Dishes",
+      "priority": "Important",
+      "duration": "15min"
+    },
+    {
+      "id": 2,
+      "title": "Fix Bed",
+      "priority": "Can Wait",
+      "duration": "3min"
+    },
+    {
+      "id": 3,
+      "title": "Catch Matt doing weird things",
+      "priority": "MOI IMPORTANTE",
+      "duration": "however long it takes"
+    },
+    {
+      "title": "call rishi",
+      "priority": "high",
+      "duration": "3 hours",
+      "id": 4
+    },
+    {
+      "title": "qweadsv",
+      "duration": "asdv",
+      "priority": "23r",
+      "id": 5
+    },
+    {
+      "title": "2e",
+      "duration": "2",
+      "priority": "fasdv",
+      "id": 6
+    }
+  ]
+}
