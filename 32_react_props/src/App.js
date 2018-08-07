@@ -8,7 +8,6 @@ class App extends Component {
     return (
       <div className='App'>
         <NavBar />
-        <input onChange={event => this.updateFilter(event.target.value)} />
         {
           paintings.map(painting => <Painting painting={painting} />)
         }
