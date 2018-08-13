@@ -1,0 +1,22 @@
+body {
+  margin: 0;
+  padding: 0 30px;
+  font-family: sans-serif;
+}
+
+.painting-container {
+  border: solid 2px black;
+  border-radius: 5px;
+  max-width: 200px;
+  padding: 20px;
+  margin: 10px;
+  background: #aaa;
+}
+
+.painting-container:hover {
+  background: #888;
+}
+
+.painting {
+  width: 200px;
+}
