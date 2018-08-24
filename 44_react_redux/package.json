@@ -1,0 +1,20 @@
+{
+  "name": "mod4-teacher-upvoter-redux",
+  "description": "",
+  "homepage": "https://stackblitz.com/edit/mod4-teacher-upvoter-redux",
+  "dependencies": {
+    "react": "16.1.1",
+    "react-dom": "16.4.2",
+    "react-scripts": "1.0.10",
+    "react-redux": "5.0.7",
+    "redux": "4.0.0"
+  },
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
