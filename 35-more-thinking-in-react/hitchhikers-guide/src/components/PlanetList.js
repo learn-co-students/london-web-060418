@@ -13,18 +13,18 @@ import Planet from './Planet'
 class PlanetList extends React.Component{
 
 
-	render(){
+  render(){
 
-		let renderedPlanets = this.props.planets.map((planet) => {
-			return <Planet planet={planet}/>
-		})
+    let renderedPlanets = this.props.planets.map((planet) => {
+      return <Planet planet={planet}/>
+    })
 
-		return (
-			<div>
-				{renderedPlanets}
-			</div>
-		)
-	}
+    return (
+      <div>
+        {renderedPlanets}
+      </div>
+    )
+  }
 }
 
 export default PlanetList

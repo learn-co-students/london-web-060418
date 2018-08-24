@@ -18,25 +18,25 @@ class App extends Component {
     })
   }
 
- 	changeFilter = (event) => {
- 		this.setState({
- 			filterTerm: event.target.value
- 		})
- 	}
+  changeFilter = (event) => {
+    this.setState({
+      filterTerm: event.target.value
+    })
+  }
 
 
   render() {
-  	let filteredPlanets = this.state.planets
+    let filteredPlanets = this.state.planets
 
-  	if (this.state.filterTerm) {
-	  	filteredPlanets = this.state.planets.filter((planet) => {
-	  		return planet.name.toLowerCase().includes(this.state.filterTerm.toLowerCase())
-	  	})
-  	}
+    if (this.state.filterTerm) {
+      filteredPlanets = this.state.planets.filter((planet) => {
+        return planet.name.toLowerCase().includes(this.state.filterTerm.toLowerCase())
+      })
+    }
 
     return (
       <div className="App">
-      	<Filter changeFilter={this.changeFilter} filterTerm={this.state.filterTerm}/>
+        <Filter changeFilter={this.changeFilter} filterTerm={this.state.filterTerm}/>
         <PlanetList planets={filteredPlanets} />
         <NewPlanetForm addPlanet={this.addPlanet} />
       </div>
